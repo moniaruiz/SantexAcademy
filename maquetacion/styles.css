@@ -1,30 +1,176 @@
 
-
-
 html {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
 }
 
+body {
+    margin: 0;
+}
+
 p {
-    margin-right: 2em;
+    margin-right: 2.6em;
     font-weight: bold;
-    font-size: 0.9em;
-    font-weight: 500;
+    font-size: 0.8em;
+    font-family: 500; 
+    
+}
+
+#navbar-right p:hover{
+    color:#6b53f0;
+    transition: 0.5s;
 }
 
 button {
     background-color: white;
     border-radius: 30px;
-    padding: 0px 1.5em;
-    height: 2.5em;
-    border: 2px solid black;
+    padding: 0em 1.5em;
+    height: 2.5em;  
+    border: 2px solid black; 
     font-size: 0.8em;
     width: 8em;
+    font-weight: 500;   
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    border: solid black 2px;
+    transition: 0,5s;
+    font-weight: 500;
+}
+
+#navbar{
+    display: flex;
+    border-bottom: 1px solid gray;
+    padding: 18px 80px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+div#navbar-right {
+    display: flex;
+    align-items: center;
+    margin: 0px 100px;    
 }
 
 div#navbar-left img {
-    width: 8em;
+    width: 9em;
+}
+
+#presentacion {
+    background-color: white;
+}
+
+h1#presentacion-texto {
+    margin: 90px 420px 40px 420px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8em;
+    color: #201b24;
+}
+
+#botones-title {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 550px;
+    margin-bottom: 90px;
+}
+
+button.boton-contactanos {
+    width: 140px;
+    height: 35px;
+    border: solid 2px;
+    font-weight: 500;   
+}
+
+button.boton-sumate {
+    width: 110px;
+    height: 35px;
+    border: solid 2px;
+    font-weight: 500;
+    color: #6b53f0;
+}
+
+button.boton-contactanos:hover {
+    background-color: black;
+    border: solid black 2px;
+    color: white;
+    transition: 0.5s;
+    font-weight: 500;   
+}
+button.boton-sumate:hover {
+    background-color: #6b53f0;
+    border: solid #6b53f0 2px;
+    color: white;
+    transition: 0.5s;
+    font-weight: 500;   
+}
+
+div#impacto {
+    display: flex;
+    height: 450px;
+    background-color: #211d23;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#impacto-left {
+    width: 50%;
+    margin: 0px 100px;
+    padding: 180px;  
+}
+
+.subtitle-impacto {
+    font-size: 0.86em;
+    line-height: 1.6em;
+    font-weight: 500;
+}
+
+#impacto-right {
+    display: flex;
+    width: 50%;
+    justify-content: baseline;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    right: 220px;
+    top: 25px;
+}
+
+.number {
+    font-size: 3.2em;
+    font-weight: 700;
+    margin: 0px 10px;
+}
+
+.below-number {
+    font-size: 0.85em;
+    line-height: 1.6em;
+    font-weight: 400;
+    color: rgb(159, 155, 155);
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.plus-sign {
+    color: #6b53f0;
+    font-size: 0.5em;
+    font-weight: 400;
+    position: relative;
+    bottom: 10px;
+}
+
+#background {
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    overflow: scroll;
+    background-image: url(twp-home.jpg);
+    size: cover;
 }
 
 @media (width >= 2500px) {
@@ -32,7 +178,6 @@ div#navbar-left img {
         font-size: 28px;
     }
 }
-
 @media (width >= 3500px) {
     html {
         font-size: 32px;
